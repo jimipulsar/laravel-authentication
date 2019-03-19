@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="text-align:center;">{{ __('Accedi per visualizzare tutti i contenuti') }}</div>
+                <div class="card-header" style="text-align:center; "> Entra nell'area clienti per visualizzare i contenuti</div>
 
                 <div class="card-body">
 

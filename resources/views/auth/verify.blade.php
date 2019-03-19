@@ -10,7 +10,7 @@
                 <div class="card-body">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
-                            {{ __('Un link di conferma è stato inviato al tuo indirizzo e-mail.') }}
+                            Un link di conferma è stato inviato al tuo indirizzo e-mail.
                         </div>
                     @endif
 
