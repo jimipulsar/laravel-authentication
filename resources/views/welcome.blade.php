@@ -5,7 +5,6 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-success">
-            
                     @if(Auth::check())
                     <h3 style="text-align:center;">Lista dei personaggi di "Game of Thrones"</h3>
                     <hr>
@@ -30,5 +29,6 @@
             @endif
         </div>
     </div>
+  
 </div>
 @endsection
