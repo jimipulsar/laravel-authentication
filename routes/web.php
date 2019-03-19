@@ -10,10 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/logout', function() {
+	Auth::logout();
+	return redirect('/');
+});
 
+Route::auth();
 
-
-Route::get('/home', 'ListController@show');
 Auth::routes();
 
-Route::get('/', 'ListController@show')->name('welcome');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'HomeController@index');
+
+Route::get('/welcome', 'ListController@show')->name('welcome');

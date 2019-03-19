@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="contenitore">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-success">
-                    @if(Auth::check())
                     <h3 style="text-align:center;">Lista dei personaggi di "Game of Thrones"</h3>
+                    @if(Auth::check())
                     <hr>
                       <table class="table table-striped table-light">
                           <tr>
@@ -20,8 +20,7 @@
                           @endforeach
                       </table>
                     @endif
-
-
+                    <a class="btn btn-outline-primary " href="{{ route('home') }}">  {{ __('<< Torna indietro ') }}</a>
             </div>
             @if(Auth::guest())
             <h3>Per visualizzare la lista devi effettuare l'accesso</h3>
@@ -29,6 +28,6 @@
             @endif
         </div>
     </div>
-  
+
 </div>
 @endsection

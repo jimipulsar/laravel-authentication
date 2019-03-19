@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="contenitore">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -12,8 +12,13 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        Benvenuto, 
+                        Benvenuto,
                         Ti sei autenticato correttamente!
+                        <hr>
+                        <img src="http://localhost:8000/images/cast.jpg" width="70%">
+                        <hr>
+                        <h6>Per visualizzare la lista del cast di Game of Thrones clicca qui ->
+                        <a class="btn btn-outline-primary " href="{{ route('welcome') }}">  {{ __('Visita il cast ufficiale') }}</a></h6>
                     </div>
             </div>
         </div>
